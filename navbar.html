@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height:30px;
+            width:95%;
+            border-radius: 20px;
+            background-color: rgb(25, 25, 59);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+        
+            
+
+        }
+        #main>div{
+            
+        }
+        #main>div:nth-child(2){
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            align-items: stretch;
+            gap: 20px;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>Rebook</div>
+        <div>
+            <div>Men</div>
+            <div>Women</div>
+            <div>Login</div>
+            <div>Signup</div>
+        </div>
+    </div>
+    
+</body>
+</html>
