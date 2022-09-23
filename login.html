@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+        }
+
+        #container{
+            height:400px;
+            width:30%;
+            border:1px solid red;
+            margin:auto;
+            margin-top:10%;
+            background-color: cyan;
+        }
+        h3{
+            text-align: left;
+        }
+        h2{
+            color:red;
+        }
+
+        #container>div{
+            margin-top:5%;
+        }
+
+        input{
+            height:30px;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <div id = container><div> 
+        <h2> Visitor</h2>
+        
+        <input id ="name" type = "name" placeholder="name" size ="50%"/>
+    </div>
+    
+    <div>
+        
+        <input id ="email" type = "email" placeholder = "email" size = "50%"/>
+    </div>
+    
+    <div>
+        
+        <input id ="password" type = "password" placeholder ="password" size = "50%"/>
+    </div>
+    <div id ="bt"> <button onClick = "sign()"> login</button>
+       
+    </div>
+    </div>
+    
+
+</body>
+<script>
+   
+    
+    
+ function sign()
+{
+    let name = document.getElementById("name").value;
+   
+   
+     
+    localStorage.setItem("name",name);
+    
+
+    let email = document.getElementById("email").value;
+
+    localStorage.setItem("email",email);
+
+    let password = document.getElementById("password").value;
+
+    localStorage.setItem("password",password);
+
+   if(localStorage.getItem("name")==="")
+   {
+     alert("No Name")
+    
+   }
+
+   else if(localStorage.getItem("email")==="")
+   {
+    alert("No Email");
+   }
+   
+   else if(localStorage.getItem("password")==="")
+   {
+    alert("No Password");
+   }
+
+   else
+   {
+    alert("Login Success");
+   }
+   
+
+ }
+
+   
+
+
+
+
+</script>
+</html>
